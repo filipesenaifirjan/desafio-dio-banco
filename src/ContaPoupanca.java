@@ -1,6 +1,9 @@
 
-public class ContaPoupanca {
-	public int agencia;
-	public int numero;
-	public double saldo;
-}
+public class ContaPoupanca extends Conta {
+	
+	@Override
+	public void imprimirExtrato() {
+		System.out.println("Extrato Conta Poupanca");
+		super.imprimirInformacoesComuns();
+	}
+	}
